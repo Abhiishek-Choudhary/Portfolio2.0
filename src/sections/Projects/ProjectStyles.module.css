@@ -34,7 +34,13 @@
   .projectsContainer{
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 40px;
     padding: 0 30px;
+  }
+
+  .projectsContainer > *{
+    flex: 0 0 calc(33.333% - 40px);
+    max-width: 250px;
   }
 }

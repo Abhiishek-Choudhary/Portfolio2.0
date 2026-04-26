@@ -4,6 +4,7 @@ import movie from "../../assets/movie.png"
 import music from "../../assets/music.png"
 import chat from "../../assets/chat.png"
 import whatgpt from "../../assets/whatgpt.png"
+import fitlift from "../../assets/fitlift.png"
 
 function Projects() {
   return (
@@ -33,6 +34,12 @@ function Projects() {
           link="https://whatgpt4.netlify.app/"
           h3="Whatgpt3"
           p="AI App"
+        />
+        <ProjectCard
+          src={fitlift}
+          link="https://fitness-frontend-abhishek.vercel.app"
+          h3="FitLife"
+          p="Fitness Website"
         />
       </div>
     </section>
