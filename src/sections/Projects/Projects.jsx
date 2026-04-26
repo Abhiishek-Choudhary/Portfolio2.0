@@ -36,9 +36,9 @@ function Projects() {
           p="AI App"
         />
         <ProjectCard
-          src={getfit}
+          src={fitlift}
           link="https://fitness-frontend-abhishek.vercel.app"
-          h3="FitLife"
+          h3="GetFit"
           p="Fitness Website"
         />
       </div>
