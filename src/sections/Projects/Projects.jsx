@@ -5,6 +5,7 @@ import music from "../../assets/music.png"
 import chat from "../../assets/chat.png"
 import whatgpt from "../../assets/whatgpt.png"
 import fitlift from "../../assets/fitlift.png"
+import medicare from "../../assets/hipsster.png"
 
 function Projects() {
   return (
@@ -40,6 +41,12 @@ function Projects() {
           link="https://fitness-frontend-abhishek.vercel.app"
           h3="GetFit"
           p="Fitness Website"
+        />
+        <ProjectCard
+          src={medicare}
+          link="https://medicare-abhishek.vercel.app/"
+          h3="Medicare"
+          p="Hospital/Medical Website"
         />
       </div>
     </section>
