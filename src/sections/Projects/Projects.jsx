@@ -5,7 +5,7 @@ import music from "../../assets/music.png"
 import chat from "../../assets/chat.png"
 import whatgpt from "../../assets/whatgpt.png"
 import fitlift from "../../assets/fitlift.png"
-import medicare from "../../assets/hipsster.png"
+import medicare from "../../assets/medicare.jpg"
 
 function Projects() {
   return (
@@ -46,7 +46,7 @@ function Projects() {
           src={medicare}
           link="https://medicare-abhishek.vercel.app/"
           h3="Medicare"
-          p="Hospital/Medical Website"
+          p="Medical Website"
         />
       </div>
     </section>
