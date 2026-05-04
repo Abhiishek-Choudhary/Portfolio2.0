@@ -60,6 +60,8 @@
 
 .colorModeContainer {
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .colorMode {
@@ -74,12 +76,14 @@
 
 .description {
   max-width: 33ch;
+  align-self: center;
 }
 
 .info {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  align-items: center;
 }
 
 @media (width >= 800px) {
