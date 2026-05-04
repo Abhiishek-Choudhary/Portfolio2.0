@@ -9,7 +9,7 @@ import linkedinLight from "../../assets/linkedin-light.svg";
 import linkedinDark from "../../assets/linkedin-dark.svg";
 import { useTheme } from "../../common/ThemeContext";
 import profile from '../../../public/profile.jpeg'
-import resume from '../../assets/abhishek_resume.pdf'
+import resume from '../../assets/Abhishek_choudhary.pdf'
 
 function Hero() {
   const { theme, toggleTheme } = useTheme();

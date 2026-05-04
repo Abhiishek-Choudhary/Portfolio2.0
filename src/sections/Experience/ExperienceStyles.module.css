@@ -1,0 +1,151 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.cardsWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 28px;
+  border-radius: 16px;
+  border-left: 4px solid var(--btn-color);
+  border-top: 1px solid rgba(9, 135, 242, 0.2);
+  border-right: 1px solid rgba(9, 135, 242, 0.2);
+  border-bottom: 1px solid rgba(9, 135, 242, 0.2);
+  background-color: #f4f8ff;
+  width: 100%;
+  max-width: 580px;
+  box-sizing: border-box;
+  transition: transform 200ms ease-in-out, box-shadow 200ms ease-in-out;
+  box-shadow: 0 2px 12px rgba(9, 135, 242, 0.08);
+}
+
+:global([data-theme='dark']) .card {
+  background-color: #2a2a2a;
+  border-top-color: rgba(255, 255, 255, 0.1);
+  border-right-color: rgba(255, 255, 255, 0.1);
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+  border-left-color: #fff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(9, 135, 242, 0.15);
+}
+
+:global([data-theme='dark']) .card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.companyRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+
+.company {
+  color: var(--btn-color);
+  letter-spacing: 0.5px;
+}
+
+.ycBadge {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 20px;
+  background-color: #f26522;
+  color: #fff;
+}
+
+.role {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.meta {
+  font-size: 13px;
+  color: var(--footer-text-color);
+  margin-bottom: 16px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skillTag {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 12px;
+  border-radius: 20px;
+  background-color: rgba(9, 135, 242, 0.1);
+  color: var(--btn-color);
+  border: 1px solid rgba(9, 135, 242, 0.3);
+  transition: transform 200ms ease-in-out;
+}
+
+:global([data-theme='dark']) .skillTag {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.skillTag:hover {
+  transform: scale(1.05);
+}
+
+.projectBtn {
+  margin-top: 20px;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--btn-text-color);
+  background-color: var(--btn-color);
+  border-radius: 20px;
+  padding: 8px 18px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 14px;
+  font-weight: 500;
+  width: fit-content;
+  transition: transform 200ms ease-in-out, box-shadow 200ms ease-in-out;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.projectBtn:hover {
+  transform: scale(1.05);
+}
+
+.projectBtn:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+@media (width >= 800px) {
+  .cardsWrapper {
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    gap: 32px;
+    padding: 0 30px;
+  }
+
+  .card {
+    flex: 1;
+    max-width: 520px;
+  }
+}
